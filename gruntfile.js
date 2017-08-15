@@ -33,7 +33,7 @@ module.exports = function(grunt){
 				src: [
 					'test/css/main.css'
 				],
-				dest: 'assets/templates/skat/css/'
+				dest: 'assets/templates/skat_<%= pkg.version%>/css/'
 			}
 		},
 		requirejs: {
@@ -73,7 +73,7 @@ module.exports = function(grunt){
 			},
 			app: {
 				files: {
-					'assets/templates/skat/js/app.js' : [
+					'assets/templates/skat_<%= pkg.version%>/js/app.js' : [
 						'bower_components/jquery/dist/jquery.js',
 						'bower_components/jquery-mousewheel/jquery.mousewheel.js',
 						'bower_components/jqueryui-touch-punch/jquery.ui.touch-punch.js',
@@ -88,7 +88,7 @@ module.exports = function(grunt){
 			},
 			hypher: {
 				files: {
-					'assets/templates/skat/js/hypher.js' : [
+					'assets/templates/skat_<%= pkg.version%>/js/hypher.js' : [
 						'bower_components/hyphernationRUru/dist/jquery.hypher.js',
 						'bower_components/hyphernationRUru/dist/ru-ru.js',
 					]
@@ -96,7 +96,7 @@ module.exports = function(grunt){
 			},
 			main: {
 				files: {
-					'assets/templates/skat/js/main.js': [
+					'assets/templates/skat_<%= pkg.version%>/js/main.js': [
 						'src/js/main.js',
 					]
 				}
@@ -121,7 +121,7 @@ module.exports = function(grunt){
 						src: [
 							'src/images/*.{png,jpg,gif,svg}'
 						],
-						dest: 'assets/templates/skat/images/',
+						dest: 'assets/templates/skat_<%= pkg.version%>/images/',
 						filter: 'isFile'
 					}
 				]
@@ -153,19 +153,19 @@ module.exports = function(grunt){
 				expand: true,
 				cwd: 'src/fonts',
 				src: '**',
-				dest: 'assets/templates/skat/fonts/',
+				dest: 'assets/templates/skat_<%= pkg.version%>/fonts/',
 			},
 			bootstrap: {
 				expand: true,
 				cwd: 'bower_components/bootstrap/dist/fonts',
 				src: '**',
-				dest: 'assets/templates/skat/fonts/',
+				dest: 'assets/templates/skat_<%= pkg.version%>/fonts/',
 			},
 			slick: {
 				expand: true,
 				cwd: 'bower_components/slick-carousel/slick/fonts',
 				src: '**',
-				dest: 'assets/templates/skat/fonts/',
+				dest: 'assets/templates/skat_<%= pkg.version%>/fonts/',
 			},
 			tpl: {
 				expand: true,
@@ -175,7 +175,7 @@ module.exports = function(grunt){
 			}
 		},
 		jade: {
-			avon: {
+			files: {
 				options: {
 					pretty: !gc.minifyHtml,
 					data: {
@@ -218,12 +218,12 @@ module.exports = function(grunt){
 							"/** \n"+
 							" * <%= filename %>\n"+
 							" * \n"+
-							" * <%= template %> Templates AVON WORLD\n"+
+							" * <%= template %> Templates SKAT_<%= pkg.version%>\n"+
 							" * \n"+
 							" * @category	chunk\n"+
 							" * @version		1.0\n"+
 							" * @license		http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)\n"+
-							" * @internal	@modx_category Templates AVON WORLD\n"+
+							" * @internal	@modx_category Templates SKAT_<%= pkg.version%>\n"+
 							" * @internal	@installset base\n"+
 							" * @internal	@overwrite false\n"+
 							" */\n",
