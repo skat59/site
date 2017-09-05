@@ -24,7 +24,7 @@ module.exports = function(grunt){
 		},
 		autoprefixer:{
 			options: {
-				browsers: ['> 1%', 'last 2 versions', 'Firefox 16.0', 'Opera 12.1', "Chrome 26.0"],
+				browsers: ['last 2 versions', 'Android 4', 'ie 8', 'ie 9', 'Firefox >= 27', 'Opera >= 12.0', 'Safari >= 6'],
 				cascade: false
 			},
 			css: {
@@ -33,7 +33,35 @@ module.exports = function(grunt){
 				src: [
 					'test/css/main.css'
 				],
-				dest: 'assets/templates/skat_<%= pkg.version%>/css/'
+				dest: 'test/css/main_pref/'//'assets/templates/skat_<%= pkg.version%>/css/'
+			}
+		},
+		cssmin: {
+			target: {
+				files: {
+					'assets/templates/skat_<%= pkg.version%>/css/main.css': [
+						'test/css/main_pref/main.css'
+					]
+				}
+			}
+		},
+		modernizr: {
+			dist: {
+				"crawl": false,
+				"customTests": [],
+				"dest": "assets/templates/skat_<%= pkg.version%>/js/modernizr.js",
+				"tests": [
+					"flexbox",
+					"svg",
+					"smil",
+					"objectfit",
+					"cssvhunit",
+					"cssvwunit",
+				],
+				"options": [
+					"setClasses"
+				],
+				"uglify": true
 			}
 		},
 		requirejs: {
@@ -50,9 +78,10 @@ module.exports = function(grunt){
 					exclude: [ "jquery" ],
 					include: [ 
 								"../disable-selection.js",
+								"mouse.js",
 								"slider.js",
 							],
-					out: "test/js/jquery.slider.js",
+					out: "test/js/jquery.custom.ui.js",
 					done: function(done, output) {
 						grunt.log.writeln(output.magenta);
 						grunt.log.writeln("jQueryUI Custom Build ".cyan + "done!\n");
@@ -75,8 +104,9 @@ module.exports = function(grunt){
 				files: {
 					'assets/templates/skat_<%= pkg.version%>/js/app.js' : [
 						'bower_components/jquery/dist/jquery.js',
-						'bower_components/jquery-mousewheel/jquery.mousewheel.js',
+						'test/js/jquery.custom.ui.js',
 						'bower_components/jqueryui-touch-punch/jquery.ui.touch-punch.js',
+						'bower_components/jquery-mousewheel/jquery.mousewheel.js',
 						'bower_components/jquery.maskedinput/dist/jquery.maskedinput.js',
 						'bower_components/slick-carousel/slick/slick.js',
 						'bower_components/parallax.js/parallax.js',
@@ -183,7 +213,7 @@ module.exports = function(grunt){
 					}
 				},
 				files: {
-					"index.html": [
+					"index.php": [
 						"src/jade/index.jade"
 					],
 				}
@@ -247,6 +277,7 @@ module.exports = function(grunt){
 			},
 			html: {
 				files: [
+					'src/jade/**/*.php',
 					'src/jade/**/*.jade',
 					'src/jade/**/*.tpl',
 				],
@@ -262,14 +293,20 @@ module.exports = function(grunt){
 				files: [
 					'src/less/**/*.{css,less}',
 				],
-				tasks: ['notify:watch', 'less', 'autoprefixer',"jade","copy:tpl","usebanner",'notify:done']//
+				tasks: ['notify:watch', 'less', 'autoprefixer','cssmin', "jade","copy:tpl","usebanner",'notify:done']
+			},
+			fonts: {
+				files: [
+					'src/fonts/**/*.*',
+				],
+				tasks: ['notify:watch', 'less', 'autoprefixer','cssmin', "copy:main",'notify:done']
 			},
 			images: {
 				files: [
 					'src/images/*.{png,jpg,gif,svg}',
 					'src/images/css/*.{png,jpg,gif,svg}'
 				],
-				tasks: ['notify:watch', 'newer:imagemin', 'less', 'autoprefixer', 'notify:done']//
+				tasks: ['notify:watch', 'newer:imagemin', 'less', 'autoprefixer', 'cssmin', 'notify:done']//
 			}
 		},
 		notify: {
@@ -289,6 +326,6 @@ module.exports = function(grunt){
 			}
 		}
 	});
-	grunt.registerTask('default', 	['notify:watch', 'imagemin', 'less', 'autoprefixer', 'requirejs', 'uglify', 'jade', 'copy', 'usebanner', 'notify:done']);
+	grunt.registerTask('default', 	['notify:watch', 'imagemin', 'less', 'autoprefixer', 'cssmin', 'modernizr', 'requirejs', 'uglify', 'jade', 'copy', 'usebanner', 'notify:done']);
 	grunt.registerTask('dev', 		['watch']);
 }

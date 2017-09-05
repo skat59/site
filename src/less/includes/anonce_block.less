@@ -1,0 +1,28 @@
+.anonce_block {
+	position: relative;
+	.clearfix();
+	font-size: 16px;
+	margin-bottom: 30px;
+	@media(min-width: 768px) {
+		font-size: 18px;
+	}
+	p {
+		margin-bottom: 0px;
+		+ p {
+			margin-top: 10px;
+		}
+	}
+	&_wrapper {
+		padding-top: 15px;
+		padding-bottom: 20px;
+		border-radius: 10px;
+		.box-shadow(0 0 15px #e3e3e3);
+	}
+	&_title {
+		font-weight: bold;
+		font-size: 20px;
+		@media(min-width: 768px) {
+			font-size: 24px;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+.slider {
+	.slick {
+		position: relative;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+		.slick {
+			&-data {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				bottom: 0px;
+				right: 0px;
+				width: 100%;
+				height: 100%;
+				&-item {
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					bottom: 0px;
+					right: 0px;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					z-index: 1;
+					.transition(opacity 1s);
+					&.active {
+						opacity: 1;
+						z-index: 5;
+					}
+				}
+			}
+		}
+		&-item {
+			color: #fff;
+			z-index: 20;
+			position: relative;
+			> .container {
+				position: relative;
+				z-index: 5;
+			}
+			&-title {
+				padding-top: 27%;
+				font-size: 20px;
+				@media(min-width: 530px){
+					font-size: 33px;
+				}
+			}
+			&-description {
+				margin-bottom: 0px;
+				padding-bottom: 27%;
+				font-size: 16px;
+				@media(min-width: 530px){
+					font-size: 20px;
+				}
+				@media(min-width: 768px) {
+					text-align: justify;
+				}
+			}
+		}
+	}
+}
