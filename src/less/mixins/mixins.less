@@ -1,0 +1,20 @@
+.make-pm(@style, @prefix, @step: 5, @end: 100){
+	.loop(@counter) when (@counter <= @end) {
+		@class: ~".@{prefix}-@{counter}";
+		@{class}{
+			@{style}: 1px * @counter;
+		}
+		.loop((@counter + @step));
+	}
+	.loop(0);
+}
+.make-fs(@end: 60){
+	.loop(@counter) when (@counter <= @end) {
+		@class: ~".fs-@{counter}";
+		@{class}{
+			font-size: 1px * @counter;
+		}
+		.loop((@counter + 1));
+	}
+	.loop(10);
+}

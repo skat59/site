@@ -29,10 +29,6 @@ $(function(){
 			return !1;
 		}
 	});
-	
- /*
- mousedown mouseenter mouseleave mousemove mouseout mouseover mouseup mousewheel
- */
 	$('.dropdown').on('mouseleave', function(e){
 		if(window.innerWidth > 767){
 			$('>a', $(this)).dropdown('toggle');

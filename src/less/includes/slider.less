@@ -62,4 +62,43 @@
 			}
 		}
 	}
+	&-buttons {
+		position: absolute;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 30px;
+		bottom: 0px;
+		width: 100%;
+		left: 0px;
+		right: 0px;
+		z-index: 25;
+		&-techic, &-zapcast {
+			text-align: center;
+			.btn {
+				background-color: #002952;
+				color: #fff;
+				font-weight: bold;
+				padding: 14px 25px;
+				border: 1px solid #ffd129;
+				border-radius: 0px;
+				box-shadow: none;
+				.transition(all .3s);
+				&:hover {
+					background-color: #003a74;
+					color: #ffd129;
+				}
+				&.active, &:active, &:focus, &:hover, & {
+					outline: none;
+				}
+			}
+		}
+		@media (min-width: 768px){
+			&-techic {
+				text-align: right;
+			}
+			&-zapcast {
+				text-align: left;
+			}
+		}
+	}
 }
