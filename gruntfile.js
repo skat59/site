@@ -109,7 +109,8 @@ module.exports = function(grunt){
 						'bower_components/jquery-mousewheel/jquery.mousewheel.js',
 						'bower_components/jquery.maskedinput/dist/jquery.maskedinput.js',
 						'bower_components/slick-carousel/slick/slick.js',
-						'bower_components/parallax.js/parallax.js',
+						//'bower_components/parallax.js/parallax.js',
+						'bower_components/jarallax/jarallax/jarallax.js',
 						'bower_components/arcticModal/arcticmodal/jquery.arcticmodal.js',
 						'bower_components/jquery_lazyload/jquery.lazyload.js',
 						'bower_components/bootstrap/dist/js/bootstrap.js',
@@ -152,6 +153,15 @@ module.exports = function(grunt){
 							'src/images/*.{png,jpg,gif,svg}'
 						],
 						dest: 'assets/templates/skat_<%= pkg.version%>/images/',
+						filter: 'isFile'
+					},
+					{
+						expand: true,
+						flatten : true,
+						src: [
+							'src/images/partners/*.{png,jpg,gif,svg}'
+						],
+						dest: 'assets/templates/skat_<%= pkg.version%>/images/partners/',
 						filter: 'isFile'
 					}
 				]
@@ -304,6 +314,7 @@ module.exports = function(grunt){
 			images: {
 				files: [
 					'src/images/*.{png,jpg,gif,svg}',
+					'src/images/partners/*.{png,jpg,gif,svg}',
 					'src/images/css/*.{png,jpg,gif,svg}'
 				],
 				tasks: ['notify:watch', 'newer:imagemin', 'less', 'autoprefixer', 'cssmin', 'notify:done']//

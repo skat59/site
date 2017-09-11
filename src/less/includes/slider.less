@@ -59,6 +59,9 @@
 				@media(min-width: 768px) {
 					text-align: justify;
 				}
+				@media(max-width: 767px){
+					padding-bottom: 190px;
+				}
 			}
 		}
 	}
@@ -82,7 +85,9 @@
 				border: 1px solid #ffd129;
 				border-radius: 0px;
 				box-shadow: none;
+				margin-top: 0px;
 				.transition(all .3s);
+				width: 215px;
 				&:hover {
 					background-color: #003a74;
 					color: #ffd129;
@@ -98,6 +103,11 @@
 			}
 			&-zapcast {
 				text-align: left;
+			}
+		}
+		@media(max-width: 767px) {
+			&-zapcast {
+				margin-top: 30px;
 			}
 		}
 	}

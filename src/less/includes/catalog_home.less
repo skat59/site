@@ -26,6 +26,8 @@
 				}
 			}
 			&_link {
+				background-color: rgba(255,255,255, 0.5);
+				.transition(all .5s);
 				&, &:hover, &:focus, &:active {
 					outline: none;
 					display: block;
@@ -48,6 +50,7 @@
 					z-index: 2;
 				}
 				&:hover {
+					background-color: #fff;
 					&:before {
 						//background-color: rgba(0, 0, 0, .2);
 					}
@@ -65,10 +68,10 @@
 					background-size: 96% auto;
 					background-repeat: no-repeat;
 					filter: saturate(100%);
+					.transition(all .5s);
 					height: 1px;
 					z-index: 1;
 					padding-bottom: percentage((1/4)*3);
-					.transition(all .5s);
 					@media (min-width: 768px){
 						padding-bottom: percentage(.9);
 					}

@@ -4,6 +4,22 @@
 			margin-bottom: 0px;
 			border: 0px solid #fff;
 			.navbar {
+				&-toggle {
+					&, &.collapsed {
+						.icon {
+							&-bar {
+								background-color: #001f3d;
+							}
+						}
+					}
+					&[aria-expanded="true"], &:hover {
+						.icon {
+							&-bar {
+								background-color: #003a74;
+							}
+						}
+					}
+				}
 				&-brand {
 					&, &:focus, &:active {
 						color: #fff;
