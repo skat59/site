@@ -26,6 +26,7 @@
     "hyphernationRUru": "https://github.com/ProjectSoft-STUDIONIONS/hyphernationRUru.git",
     "jquery_lazyload": "jquery.lazyload#^1.9.7",
     "arcticModal": "https://github.com/vjik/arcticModal.git",
-    "parallax.js": "https://github.com/pixelcog/parallax.js.git#^1.4.2"
+    "parallax.js": "https://github.com/pixelcog/parallax.js.git#^1.4.2",
+    "jquery.easing": "https://github.com/gdsmith/jquery.easing.git#^1.4.1"
   }
 }

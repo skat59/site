@@ -105,6 +105,7 @@ module.exports = function(grunt){
 					'assets/templates/skat_<%= pkg.version%>/js/app.js' : [
 						'bower_components/jquery/dist/jquery.js',
 						'test/js/jquery.custom.ui.js',
+						'bower_components/jquery.easing/jquery.easing.js',
 						'bower_components/jqueryui-touch-punch/jquery.ui.touch-punch.js',
 						'bower_components/jquery-mousewheel/jquery.mousewheel.js',
 						'bower_components/jquery.maskedinput/dist/jquery.maskedinput.js',

@@ -17,31 +17,76 @@ function getOffsetRect(elem) {
 $(function(){
 	$('.slick-partners').slick({
 		dots: false,
-		arrows: false,
+		arrows: true,
 		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 1500,
+		cssEase: 'ease-out',
+		easing: 'easeInOutBounce',
+		swipeToSlide: true,
+		nextArrow: '<span class="glyphicon glyphicon-menu-right slick-arrow slick-right" role="button" type="button"></span>',
+		prevArrow: '<span class="glyphicon glyphicon-menu-left slick-arrow slick-left" role="button" type="button"></span>',
 		speed: 300,
 		slidesToShow: 6,
-		slidesToScroll: 1,
+		slidesToScroll: 6,
 		responsive: [
 			{
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 4,
-					slidesToScroll: 1
+					slidesToScroll: 4
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 3,
-					slidesToScroll: 1
+					slidesToScroll: 3
 				}
 			},
 			{
 				breakpoint: 480,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1
+					slidesToScroll: 2
+				}
+			}
+		]
+	});
+	$('.slick-proizvoditel').slick({
+		dots: false,
+		arrows: false,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 1500,
+		cssEase: 'ease-out',
+		easing: 'easeInOutBounce',
+		swipeToSlide: true,
+		//nextArrow: '<span class="glyphicon glyphicon-menu-right slick-arrow slick-right" role="button" type="button"></span>',
+		//prevArrow: '<span class="glyphicon glyphicon-menu-left slick-arrow slick-left" role="button" type="button"></span>',
+		speed: 300,
+		slidesToShow: 6,
+		slidesToScroll: 6,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 4
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
 				}
 			}
 		]
