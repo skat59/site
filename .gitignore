@@ -3,6 +3,7 @@
 /test/*
 /tests/*
 /src/images/bin/*
+/src/bin/*
 /install/*
 /manager/*
 /assets/.thumbs/*
@@ -33,3 +34,9 @@
 /CONTRIBUTORS.md
 /HISTORY.md
 /.hitaccess
+**/*.jar
+**/*.exe
+**/*.sql
+**/*.rar
+**/*.zip
+**/*.pdf

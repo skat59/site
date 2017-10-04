@@ -65,6 +65,20 @@
 					&_list {
 						padding-bottom: 30px;
 					}
+					&_item {
+						&_link {
+							&_background {
+								filter: invert(1);
+							}
+							&:hover {
+								> span {
+									&:first-child {
+										filter: invert(0);
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}

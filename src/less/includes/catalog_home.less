@@ -59,6 +59,9 @@
 							filter: saturate(200%);
 							background-size: 103% auto;
 						}
+						svg {
+							fill: #000;
+						}
 					}
 				}
 				&_background {
@@ -72,6 +75,19 @@
 					height: 1px;
 					z-index: 1;
 					padding-bottom: percentage((1/4)*3);
+					image-rendering: pixelated;
+					svg {
+						display: block;
+						width: 80%;
+						height: 62%;
+						position: absolute;
+						top: 10%;
+						left: 10%;
+						right: 10%;
+						/* bottom: 10%; */
+						fill: #fff;
+						.transition(all .5s);
+					}
 					@media (min-width: 768px){
 						padding-bottom: percentage(.9);
 					}

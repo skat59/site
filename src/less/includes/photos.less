@@ -1,0 +1,24 @@
+.photos {
+	&-item {
+		text-align: center;
+		position: relative;
+		img {
+			max-width: 100%;
+			transform: scale(1);
+			transform-origin: 50% 50%;
+			transition: all .3s;
+		}
+		a {
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+		@media( max-width: 505px) {
+			&.col-xs-6 {
+				width: 100%;
+			}
+		}
+	}
+}

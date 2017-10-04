@@ -1,0 +1,27 @@
+.dl-horizontal {
+	&.dl-horizontal-content {
+		@media (min-width: 768px) {
+			> dt {
+				width: 300px;
+			}
+			> dd {
+				margin-left: 315px;
+			}
+		}
+	}
+}
+.new-page, .proizvod-page, .content-page, .mce-content-body {
+	p {
+		> .img-responsive {
+			.center-block();
+		}
+	}
+}
+.content-page {
+	a {
+		text-decoration: underline;
+		&.nounder {
+			text-decoration: none;
+		}
+	}
+}

@@ -112,6 +112,7 @@ module.exports = function(grunt){
 						'bower_components/slick-carousel/slick/slick.js',
 						//'bower_components/parallax.js/parallax.js',
 						'bower_components/jarallax/jarallax/jarallax.js',
+						'bower_components/fancybox/dist/jquery.fancybox.js',
 						'bower_components/arcticModal/arcticmodal/jquery.arcticmodal.js',
 						'bower_components/jquery_lazyload/jquery.lazyload.js',
 						'bower_components/bootstrap/dist/js/bootstrap.js',
@@ -164,7 +165,33 @@ module.exports = function(grunt){
 						],
 						dest: 'assets/templates/skat_<%= pkg.version%>/images/partners/',
 						filter: 'isFile'
-					}
+					},
+					{
+						expand: true,
+						cwd: 'src/images/serificats/',
+						src: ["**/*.{png,jpg,gif,svg}"],
+						dest: 'assets/images/serificats/'
+					},
+				]
+			},
+			img: {
+				options: {
+					optimizationLevel: 5,
+					svgoPlugins: [
+						{
+							removeViewBox: false
+						}
+					]
+				},
+				files: [
+					{
+						expand: true,
+						cwd: 'src/images/images/',
+						src: [
+							"**/*.{png,jpg,gif,svg}"
+						],
+						dest: 'assets/images/'
+					},
 				]
 			},
 			css: {
@@ -213,6 +240,33 @@ module.exports = function(grunt){
 				cwd: 'src/html/chunk',
 				src: '**',
 				dest: 'install/assets/chunks/',
+			},
+			real: {
+				files: [
+					{
+						expand: true,
+						cwd: 'assets/templates/skat_<%= pkg.version%>/',
+						src: "**",
+						dest: '../dev.skat.dev/assets/templates/skat_<%= pkg.version%>/'
+					},
+					{
+						expand: true,
+						cwd: 'assets/images/',
+						src: "**",
+						dest: '../dev.skat.dev/assets/images/'
+					},
+					{
+						expand: true,
+						flatten : true,
+						src: [
+							'*.{png,ico,svg}',
+							'browserconfig.xml',
+							'manifest.json'
+						],
+						dest: '../dev.skat.dev/',
+						filter: 'isFile'
+					}
+				]
 			}
 		},
 		jade: {
@@ -292,33 +346,34 @@ module.exports = function(grunt){
 					'src/jade/**/*.jade',
 					'src/jade/**/*.tpl',
 				],
-				tasks: ["jade","copy:tpl","usebanner","notify:done"]
+				tasks: ["jade","copy","usebanner","notify:done"]
 			},
 			js: {
 				files: [
 					'src/js/**/*.js'
 				],
-				tasks: ['notify:watch', 'requirejs', 'uglify:main',"jade","copy:tpl","usebanner",'notify:done']
+				tasks: ['notify:watch', 'requirejs', 'uglify:main',"jade","copy","usebanner",'notify:done']
 			},
 			css: {
 				files: [
 					'src/less/**/*.{css,less}',
 				],
-				tasks: ['notify:watch', 'less', 'autoprefixer','cssmin', "jade","copy:tpl","usebanner",'notify:done']
+				tasks: ['notify:watch', 'less', 'autoprefixer','cssmin', "jade","copy","usebanner",'notify:done']
 			},
 			fonts: {
 				files: [
 					'src/fonts/**/*.*',
 				],
-				tasks: ['notify:watch', 'less', 'autoprefixer','cssmin', "copy:main",'notify:done']
+				tasks: ['notify:watch', 'less', 'autoprefixer','cssmin', "copy",'notify:done']
 			},
 			images: {
 				files: [
 					'src/images/*.{png,jpg,gif,svg}',
+					'src/images/images/**/*.{png,jpg,gif,svg}',
 					'src/images/partners/*.{png,jpg,gif,svg}',
 					'src/images/css/*.{png,jpg,gif,svg}'
 				],
-				tasks: ['notify:watch', 'newer:imagemin', 'less', 'autoprefixer', 'cssmin', 'notify:done']//
+				tasks: ['notify:watch', 'newer:imagemin', 'less', 'autoprefixer', 'cssmin', "copy", 'notify:done']//
 			}
 		},
 		notify: {
@@ -338,6 +393,6 @@ module.exports = function(grunt){
 			}
 		}
 	});
-	grunt.registerTask('default', 	['notify:watch', 'imagemin', 'less', 'autoprefixer', 'cssmin', 'modernizr', 'requirejs', 'uglify', 'jade', 'copy', 'usebanner', 'notify:done']);
+	grunt.registerTask('default', 	['notify:watch', 'imagemin', 'less', 'autoprefixer', 'cssmin', 'modernizr', 'requirejs', 'uglify', 'jade', 'usebanner', 'copy', 'notify:done']);
 	grunt.registerTask('dev', 		['watch']);
 }

@@ -15,7 +15,15 @@
 					font-weight: bold;
 					font-size: 18px;
 					margin-top: 0px;
-					margin-bottom: 20px;
+					margin-bottom: 10px;
+					a {
+						&, &:focus {
+							text-decoration: none;
+						}
+						&:hover {
+							text-decoration: underline;
+						}
+					}
 				}
 			}
 			&-image {
@@ -32,6 +40,15 @@
 					&:hover {
 						background-size: auto 107%;
 						filter: saturate(150%);
+					}
+				}
+			}
+			&-description {
+				&-date {
+					margin-bottom: 10px;
+					&, time {
+						font-size: 12px;
+						display: block;
 					}
 				}
 			}
