@@ -55,6 +55,23 @@
 		}
 		&_03 {
 			color: #fff;
+			background-color: #2e2e2e;
+			.section_block {
+				&:before, &:after {
+					display: none;
+				}
+				a {
+					&, &:focus, &:hover {
+						color: #fff;
+						text-decoration: underline;
+					}
+				}
+			}
+			.partner-item + .partner-item:before {
+				padding-top: 15px;
+				border-top: 1px solid #fff;
+				display: block;
+			}
 			> .row {
 				/*background-image: data-uri('@{images}bin/blick_top.png'), data-uri('@{images}bin/blick_bottom.png');
 				background-position: top center, bottom center;

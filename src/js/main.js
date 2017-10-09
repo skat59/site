@@ -17,7 +17,7 @@ function getOffsetRect(elem) {
 	$('*[data-jarallax]').jarallax({
 		speed: 0.2
 	});
-	
+	var $body = $("BODY");
 	$(function(){
 		$('.slick-partners').slick({
 			dots: false,
@@ -184,8 +184,66 @@ function getOffsetRect(elem) {
 	$(function(){
 		$("[data-fancybox]").fancybox();
 	});
-
-
+$('.sidebar').on('click', function(){
+	$("html").removeClass('open_sidebar');
+	$body.css({"marginRight": 0}).removeClass('sidebar_open');
+	$(".sidebar .sidebar-wrapper").stop().animate(
+		{
+			'z-index': 6
+		},
+		300,
+		function(){
+			$(".sidebar .sidebar-wrapper").stop().animate(
+				{
+					left: "-310px"
+				},
+				200
+			);
+			$(".sidebar").stop().animate(
+				{
+					opacity: 0
+				},
+				200,
+				function(){
+					$(".sidebar").css({right: '100%'});
+				}
+			);
+		}
+	);
+});
+$('.buttonMenu').on('click', function(){
+	var w1 = $body.outerWidth(true);
+	$("html").addClass('open_sidebar');
+	var w2 = $body.outerWidth(true),
+		w3 = w2-w1;
+	if(w1 != w2) {
+		$body.css({
+			"marginRight": w3+'px'
+		});
+	}
+	$('.sidebar-wrapper-nav nav').scrollTop(0);
+	$(".sidebar").stop().css({
+		opacity: 0,
+		right: '0%'
+	}).animate(
+		{
+			opacity: 1
+		},
+		200,
+		function(){
+			$(".sidebar .sidebar-wrapper").stop().animate(
+				{
+					left: "0px",
+					'z-index': 1
+				},
+				200,
+				function(){
+					$body.addClass('sidebar_open');
+				}
+			);
+		}
+	);
+});
 window.initMapContact = function(){
 	$(function(){
 		var mapDiv = $("#map");
@@ -193,7 +251,7 @@ window.initMapContact = function(){
 			e.preventDefault();
 			return !1;
 		});
-		if($('#map').length){
+		if(mapDiv.length){
 			var options = {
 					latitude: 0,
 					longitude: 0,
@@ -258,7 +316,7 @@ window.initMapContact = function(){
 					//position: latlong,
 					//animation: data.animation,
 					title: data.title
-				}
+				},
 				marker = new google.maps.Marker(markerOptions),
 				infoWindow = new google.maps.InfoWindow({
 					content: infoContent
@@ -307,7 +365,7 @@ window.initMapContact = function(){
 							var dRes = results[0];
 							data.latitude = dRes.geometry.location.lat();
 							data.longitude = dRes.geometry.location.lng();
-							latlong = {lat: data.latitude, lng: data.longitude}
+							latlong = {lat: data.latitude, lng: data.longitude};
 							/*var latLng = new google.maps.LatLng(latlong.lat, latlong.lng);
 							map.panTo(latLng);
 							marker.setPosition(latLng);
@@ -340,9 +398,10 @@ window.initMapContact = function(){
 		}
 	});
 };
-
-$("body").append($("<script></script>", {
-	async: "",
-	defer: "",
-	src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBdyyogHS8akX69w-K6Wb_PSO2N2E9GxsQ&callback=initMapContact"
-}));
+if($("#map").length){
+	$("body").append($("<script></script>", {
+		async: "",
+		defer: "",
+		src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBdyyogHS8akX69w-K6Wb_PSO2N2E9GxsQ&callback=initMapContact"
+	}));
+}

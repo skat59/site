@@ -2,12 +2,12 @@
 <svg version="1.1" id="skat_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 155 155" style="enable-background:new 0 0 155 155;" xml:space="preserve">
 <style type="text/css">
 	#skat_logo {width: 155px; display: block;}
-	.st0{fill:#FFFFFF;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:7.9444;stroke-opacity:0.5;}
-	.st2{fill:none;stroke:#FFFFFF;stroke-width:7.9444;stroke-opacity: 1; opacity: 0; transition: opacity 1s;}
-	.preload .st2{fill:none;stroke:#FFFFFF;stroke-width:7.9444;stroke-opacity: 1; opacity: 1;}
-	.st3{fill:#DB7D43;}
-	.st4{fill:#4D59A0;}
+	#skat_logo .st0{fill:#FFFFFF;}
+	#skat_logo .st1{fill:none;stroke:#FFFFFF;stroke-width:7.9444;stroke-opacity:0.5;}
+	#skat_logo .st2{fill:none;stroke:#FFFFFF;stroke-width:7.9444;stroke-opacity: 1; opacity: 0; transition: opacity 1s;}
+	.preload #skat_logo .st2{fill:none;stroke:#FFFFFF;stroke-width:7.9444;stroke-opacity: 1; opacity: 1;}
+	#skat_logo .st3{fill:#DB7D43;}
+	#skat_logo .st4{fill:#4D59A0;}
 </style>
 <circle id="cricle_02" class="st0" cx="78.1" cy="77.5" r="62.9"/>
 <circle id="cricle_01" class="st1" cx="77.5" cy="77.5" r="71.5"/>

@@ -1,0 +1,52 @@
+.button_sidebar {
+	&-container {
+		position: relative;
+		.buttonMenu {
+			position: relative;
+			z-index: 10;
+			padding: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			.line-btn {
+				display: block;
+				background-color: #ffd129;
+				height: 2px;
+				width: 26px;
+				+ .line-btn {
+					margin-top: 6px;
+				}
+			}
+		}
+		&-parentname {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	&-buttonform {
+		min-height: 40px;
+		text-align: center;
+		.btn {
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-top: 10px;
+			margin-bottom: 0px;
+			width: 189px;
+			&-zayavka {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		@media(min-width: 768px){
+			text-align: right;
+			.btn {
+				margin-left: 0px;
+				margin-right: 0px;
+				margin-top: 2px;
+				margin-bottom: 2px;
+				+ .btn {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}
