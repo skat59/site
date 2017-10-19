@@ -138,7 +138,7 @@ module.exports = function(grunt){
 		imagemin: {
 			base: {
 				options: {
-					optimizationLevel: 5,
+					optimizationLevel: 7,
 					//progressive: true,
 					//interlaced: true,
 					svgoPlugins: [
@@ -252,7 +252,7 @@ module.exports = function(grunt){
 					{
 						expand: true,
 						cwd: 'assets/images/',
-						src: "**",
+						src: "**.{png,jpg,jpeg,gif,svg}",
 						dest: '../dev.skat.dev/assets/images/'
 					},
 					{

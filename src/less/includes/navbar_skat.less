@@ -88,6 +88,14 @@
 				.caret {
 					margin-left: 10px;
 				}
+				&:nth-child(n + 3){
+					@media(min-width: 768px){
+						ul {
+							left: auto;
+							right: 0px;
+						}
+					}
+				}
 				@media(max-width: 767px){
 					> a {
 						display: none;

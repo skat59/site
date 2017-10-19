@@ -95,16 +95,44 @@ function getOffsetRect(elem) {
 				}
 			]
 		});
+		$('.photos-slick').slick({
+			//centerMode: true,
+			nextArrow: '<span class="glyphicon glyphicon-menu-right slick-arrow slick-right" role="button" type="button"></span>',
+			prevArrow: '<span class="glyphicon glyphicon-menu-left slick-arrow slick-left" role="button" type="button"></span>',
+			arrows: true,
+			infinite: false,
+			centerPadding: '60px',
+			slidesToShow: 3,
+			dots: false,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						//arrows: false,
+						//centerMode: true,
+						infinite: false,
+						centerPadding: '40px',
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						//arrows: false,
+						//centerMode: true,
+						infinite: false,
+						centerPadding: '40px',
+						slidesToShow: 1
+					}
+				}
+			]
+		});
 	});
 
 	$(function(){
 		var body = $('body')[0],
 			scrollY = window.scrollY;
-		body.onload = function(){
-			setTimeout(function(){
-				$('body').removeClass('preload');
-			}, 1000);
-		};
+		
 		$(window).on('scroll resize', function(e){
 			scrollY = window.scrollY;
 		}).trigger('scroll');

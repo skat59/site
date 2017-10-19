@@ -9,6 +9,7 @@
 /src/bin/*.sql
 /src/bin/*.rar
 /src/bin/*.7z
+/src/bin/*.zip
 /src/bin/*.pdf
 /src/bin/*.fcp
 /src/bin/*.ttf

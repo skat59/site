@@ -166,3 +166,46 @@
         }
     }
 }
+.photos-slick {
+	.slick {
+		&-arrow {
+			position: absolute;
+			width: 50%;
+			//height: 41px;
+			line-height: 41px;
+			bottom: 0;
+			top: auto;
+			font-size: 30px!important;
+			color: #333;
+			cursor: pointer;
+			z-index: 400;
+			background-color: #fff;
+			.transition(all .3s);
+			&:hover {
+				background-color: #003a74;
+				color: #ffd129;
+			}
+			&.slick {
+				&-left {
+					padding-left: 15px;
+					text-align: left;
+					left: 0px;
+					right: auto;
+				}
+				&-right {
+					padding-right: 15px;
+					text-align: right;
+					left: auto;
+					right: 0px;
+				}
+				&-disabled {
+					&, &:hover, &:focus {
+						color: #ccc;
+						background-color: #fff;
+						cursor: no-drop;
+					}
+				}
+			}
+		}
+	}
+}
