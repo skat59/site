@@ -430,6 +430,6 @@ if($("#map").length){
 	$("body").append($("<script></script>", {
 		async: "",
 		defer: "",
-		src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBdyyogHS8akX69w-K6Wb_PSO2N2E9GxsQ&callback=initMapContact"
+		src: "https://maps.googleapis.com/maps/api/js?key="+window.googleKey+"&callback=initMapContact"
 	}));
 }
