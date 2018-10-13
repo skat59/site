@@ -73,11 +73,14 @@
 		}
 		&-copyright {
 			text-align: center;
+			.user-select(none);
+			cursor: default;
 			.copyright {
 				&-menu {
 					padding-left: 0px;
 					display: inline-block;
 					list-style: none;
+					.user-select(none);
 					> li {
 						float: left;
 						position: relative;
@@ -106,8 +109,19 @@
 				&-wrapper {
 					color: #575757;
 					font-size: 12px;
+					a {
+						&, &:focus {
+							color: #575757;
+						}
+						&:hover {
+							color: #fff;
+						}
+					}
 				}
 			}
 		}
 	}
+}
+.pixel_callback_container_form_phone {
+	color: black !important;
 }

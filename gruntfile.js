@@ -104,14 +104,16 @@ module.exports = function(grunt){
 				files: {
 					'assets/templates/skat_<%= pkg.version%>/js/app.js' : [
 						'bower_components/jquery/dist/jquery.js',
+						'bower_components/jquery.cookie/jquery.cookie.js',
 						'test/js/jquery.custom.ui.js',
 						'bower_components/jquery.easing/jquery.easing.js',
 						'bower_components/jqueryui-touch-punch/jquery.ui.touch-punch.js',
 						'bower_components/jquery-mousewheel/jquery.mousewheel.js',
 						'bower_components/jquery.maskedinput/dist/jquery.maskedinput.js',
 						'bower_components/slick-carousel/slick/slick.js',
+						'bower_components/mixitup/dist/mixitup.js',
 						//'bower_components/parallax.js/parallax.js',
-						'bower_components/jarallax/jarallax/jarallax.js',
+						'bower_components/jarallax/dist/jarallax.js',
 						'bower_components/fancybox/dist/jquery.fancybox.js',
 						'bower_components/arcticModal/arcticmodal/jquery.arcticmodal.js',
 						'bower_components/jquery_lazyload/jquery.lazyload.js',
@@ -352,7 +354,7 @@ module.exports = function(grunt){
 				files: [
 					'src/js/**/*.js'
 				],
-				tasks: ['notify:watch', 'requirejs', 'uglify:main',"jade","copy","usebanner",'notify:done']
+				tasks: ['notify:watch', 'requirejs', 'uglify',"jade","copy","usebanner",'notify:done']
 			},
 			css: {
 				files: [

@@ -28,6 +28,7 @@
 				image-rendering: pixelated !important;
 				filter: saturate(100%);
 				.transition(all .5s);
+				box-shadow: 0 0 1px #ccc;
 				&:hover {
 					background-size: auto 107%;
 					filter: saturate(150%);
@@ -43,6 +44,14 @@
 				}
 			}
 		}
+		@media(max-width:767px){
+			.mt--25 {
+				margin-top: 10px;
+				p {
+					margin-bottom: 0px;
+				}
+			}
+		}
 		@media (max-width: 599px) {
 			&-title {
 				h2, h3, h4, h5, h6 {
@@ -54,6 +63,9 @@
 			}
 			.col-xs-8, .col-xs-4 {
 				width: 100%;
+			}
+			.mt--25 {
+				margin-top: 0px;
 			}
 		}
 		+ article, + div {
