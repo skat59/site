@@ -69,3 +69,4 @@
 /**/*.rtf
 /**/*.doc
 /*.doc
+/*-lock.json
