@@ -76,3 +76,5 @@ site/.hitaccess
 /**/*.doc
 /*.doc
 /*-lock.json
+**/desktop.ini
+desktop.ini
