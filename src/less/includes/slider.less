@@ -1,0 +1,114 @@
+.slider {
+	.slick {
+		position: relative;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+		.slick {
+			&-data {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				bottom: 0px;
+				right: 0px;
+				width: 100%;
+				height: 100%;
+				&-item {
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					bottom: 0px;
+					right: 0px;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					z-index: 1;
+					.transition(opacity 1s);
+					&.active {
+						opacity: 1;
+						z-index: 5;
+					}
+				}
+			}
+		}
+		&-item {
+			color: #fff;
+			z-index: 20;
+			position: relative;
+			> .container {
+				position: relative;
+				z-index: 5;
+			}
+			&-title {
+				padding-top: 27%;
+				font-size: 20px;
+				@media(min-width: 530px){
+					font-size: 33px;
+				}
+			}
+			&-description {
+				margin-bottom: 0px;
+				padding-bottom: 27%;
+				font-size: 16px;
+				@media(min-width: 530px){
+					font-size: 20px;
+				}
+				@media(min-width: 768px) {
+					text-align: justify;
+				}
+				@media(max-width: 767px){
+					padding-bottom: 190px;
+				}
+			}
+		}
+	}
+	&-buttons {
+		position: absolute;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 30px;
+		bottom: 0px;
+		width: 100%;
+		left: 0px;
+		right: 0px;
+		z-index: 25;
+		&-techic, &-zapcast {
+			text-align: center;
+			.btn {
+				background-color: #002952;
+				color: #fff;
+				font-weight: bold;
+				padding: 14px 25px;
+				border: 1px solid #ffd129;
+				border-radius: 0px;
+				box-shadow: none;
+				margin-top: 0px;
+				.transition(all .3s);
+				width: 215px;
+				&:hover {
+					background-color: #003a74;
+					color: #ffd129;
+				}
+				&.active, &:active, &:focus, &:hover, & {
+					outline: none;
+				}
+			}
+		}
+		@media (min-width: 768px){
+			&-techic {
+				text-align: right;
+			}
+			&-zapcast {
+				text-align: left;
+			}
+		}
+		@media(max-width: 767px) {
+			&-zapcast {
+				margin-top: 30px;
+			}
+		}
+	}
+}

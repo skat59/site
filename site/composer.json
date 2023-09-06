@@ -1,0 +1,63 @@
+{
+    "name": "evolutioncms/evolution",
+    "description": "Evolution CMS is a Content Management System, ex MODX Evolution",
+    "type": "project",
+    "keywords": [
+        "content",
+        "CMS",
+        "routing",
+        "templating"
+    ],
+    "homepage": "http://evo.im/",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Dmytro Lukianenko",
+            "email": "dmi3yy@gmail.com",
+            "homepage": "http://dmi3yy.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "docs": "http://docs.evo.im",
+        "email": "dmi3yy@evo.im",
+        "telegram": "https://t.me/evolutioncms",
+        "issues": "https://github.com/evolution-cms/evolution/issues/",
+        "source": "https://github.com/evolution-cms/evolution/"
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    },
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/ProjectSoft-STUDIONIONS/evo-pack"
+		},
+		{
+			"type":"vcs",
+			"url":"https://github.com/skat59/evoLoad"
+		},
+		{
+			"type":"vcs",
+			"url":"https://github.com/skat59/vendor"
+		},
+		{
+			"type":"vcs",
+			"url":"https://github.com/skat59/skatthumb"
+		}
+	],
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "ps/image-optimizer": "^2.0",
+        "phpoffice/phpspreadsheet": "^1.10",
+        "mpdf/mpdf": "^8.0",
+        "setasign/fpdi-fpdf": "^2.2",
+		"projectsoft/studionions":"dev-master",
+		"skat/site":"dev-master",
+        "skatthumb/nicestudio": "dev-master",
+		"projectsoft/evolution": "dev-main"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

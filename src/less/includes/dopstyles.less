@@ -1,0 +1,64 @@
+.pixel_callback_container_form_button {
+	&,
+	&:focus {
+		color: #ffd129 !important;
+		background-color: #002952 !important;
+		border: 1px solid #ffd129 !important;
+	}
+	&:hover {
+		color: #ffffff !important;
+		background-color: #003a74 !important;
+	}
+}
+.pixel_widget1 .pixel_callback_container_form_phone_container input[type=text] {
+	height: 41px !important;
+}
+.pixel_widget1 .pixel_callback_form_close {
+	height: 0px !important;
+	width: 0px !important;
+	padding: 17px !important;
+	border-radius: 50% !important; 
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -10px;
+		margin-left: -10px;
+	}
+}
+.pixelskat {
+	background-color: #002952;
+	color: #fff;
+	font-size: 14px;
+	overflow: hidden;
+	transition: all 1s ease;
+	height: 0px;
+	&.policy {
+		height: auto;
+	}
+	&-wrapper {
+		position: relative;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 15px;
+		padding-bottom: 14px;
+		&-close {
+			transition: all .3s ease;
+			background-color: #002952;
+			color: #ffd129;
+			overflow: hidden;
+			display: block;
+			position: absolute;
+			border-radius: 50%;
+			right: 5px;
+			top: 5px;
+			padding: 1px;
+			font-size: 16px;
+			cursor: pointer;
+			&:hover {
+				background-color: #003a74;
+				color: #fff;
+			}
+		}
+	}
+}

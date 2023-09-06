@@ -1,0 +1,12 @@
+div.specprod_list_item.container-fluid
+	h4.specprod_list_item_title.pull-right.col-lg-9.col-md-8.col-sm-9.col-xs-8
+		a(href!="[~[+id+]~]")
+			|[+pagetitle+]
+	div(class!="specprod_list_item_image col-lg-3 col-md-4 col-sm-3 col-xs-4[+stock:is=`1`:then=` specprod_list_item--sale`+]")
+		a(href!="[~[+id+]~]")
+			img.img-responsive.center-block(src!="[+ogimage+]")
+	div.specprod_list_item_description.pull-right.col-lg-9.col-md-8.col-sm-9.col-xs-8
+		p.specprod_list_item_description_wrapper
+			|[+introtext:nl2br+]
+	div.col-lg-9.col-lg-offset-3.col-md-8.col-md-offset-4.col-sm-9.col-sm-offset-3.col-xs-12
+		|[+price+]

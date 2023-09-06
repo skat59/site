@@ -1,0 +1,34 @@
+{
+	"name": "skat",
+	"description": "",
+	"main": "package.json",
+	"authors": [
+		"ProjectSoft <projectsoft2009@yandex.ru>"
+	],
+	"license": "ISC",
+	"homepage": "https://www.skat59.ru/",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "^1.12.4",
+		"jquery.cookie": "https://github.com/carhartl/jquery-cookie.git",
+		"jquery.easing": "https://github.com/gdsmith/jquery.easing.git#^1.4.1",
+		"jqueryui-touch-punch": "https://github.com/furf/jquery-ui-touch-punch.git",
+		"bootstrap": "^3.3.7",
+		"jquery-ui": "https://github.com/components/jqueryui.git#1.12.1",
+		"slick-carousel": "https://github.com/kenwheeler/slick.git#1.6.0",
+		"jarallax": "https://github.com/nk-o/jarallax.git#^1.7.3",
+		"fancybox": "^3.0.47",
+		"hyphernationRUru": "https://github.com/ProjectSoft-STUDIONIONS/hyphernationRUru.git",
+		"jquery_lazyload": "jquery.lazyload#^1.9.7",
+		"arcticModal": "https://github.com/vjik/arcticModal.git",
+		"parallax.js": "https://github.com/pixelcog/parallax.js.git#^1.4.2",
+		"mixitup": "https://github.com/patrickkunka/mixitup.git#^3.2.2",
+		"jquery.maskedinput": "https://github.com/digitalBush/jquery.maskedinput.git#^1.4.1"
+	}
+}

@@ -1,0 +1,104 @@
+.proizvods {
+	&-item {
+		margin-bottom: 15px;
+		&-title {
+			h2, h3, h4, h5, h6 {
+				text-align: left;
+				font-weight: 700;
+				font-size: 18px;
+				margin-top: 0;
+				margin-bottom: 20px;
+				@media(max-width: 505px){
+					text-align: center;
+					font-size: 22px;
+				}
+			}
+		}
+		&-image {
+			> a {
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				height: 110px;
+				display: block;
+				position: relative;
+				transition: all .3s;
+				&, &:focus {
+					background-size: 90% auto;
+				}
+				&:hover {
+					background-size: 100% auto;
+				}
+				@media(max-width: 505px) {
+					margin-bottom: 10px;
+					&, &:focus, &:hover {
+						background-size: contain;
+					}
+				}
+			}
+		}
+		&-description {
+			
+		}
+		@media(max-width: 505px) {
+			.col-xs-4, .col-xs-8 {
+				width: 100%;
+			}
+		}
+	}
+}
+.partner {
+	&-item {
+		margin-bottom: 15px;
+		&-title {
+			h2, h3, h4, h5, h6 {
+				text-align: left;
+				font-weight: 700;
+				font-size: 18px;
+				margin-top: 0;
+				margin-bottom: 20px;
+				a {
+					&, &:focus {
+						text-decoration: none;
+					}
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				@media(max-width: 505px){
+					text-align: center;
+					font-size: 22px;
+				}
+			}
+		}
+		&-image {
+			> a {
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				height: 105px;
+				display: block;
+				position: relative;
+				transition: all .3s;
+				&, &:focus {
+					background-size: auto 90%;
+				}
+				&:hover {
+					background-size: auto 100%;
+				}
+				@media(max-width: 505px) {
+					margin-bottom: 10px;
+					&, &:focus, &:hover {
+						background-size: contain;
+					}
+				}
+			}
+		}
+		&-description {
+			
+		}
+		@media(max-width: 505px) {
+			.col-xs-4, .col-xs-8 {
+				width: 100%;
+			}
+		}
+	}
+}

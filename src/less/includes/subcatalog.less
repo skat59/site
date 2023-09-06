@@ -1,0 +1,54 @@
+.subcatalog {
+	margin-top: 30px;
+	&-item {
+		position: relative;
+		margin-bottom: 30px;
+		&-link {
+			display: block;
+			width: 100%;
+			&, &:hover, &:focus {
+				color: #ffd129;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+			&-wrapper {
+				display: block;
+				width: 100%;
+				position: relative;
+				overflow: hidden;
+				padding-bottom: 35px;
+				transition: transform .3s;
+				transform-origin: 50% 50%;
+			}
+			&, &:focus {
+				.subcatalog-item-link-wrapper {
+					transform: scale(1);
+				}
+			}
+			&-img {
+				display: block;
+				width: 100%;
+				object-fit: cover;
+			}
+			&-text {
+				display: block;
+				text-align: center;
+				background-color: #003a74;
+				padding-right: 10px;
+				padding-left: 10px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				width: 100%;
+				position: absolute;
+				bottom: 0px;
+				line-height: 25px;
+			}
+			&:hover {
+				.subcatalog-item-link-wrapper {
+					transform: scale(1.03);
+				}
+			}
+		}
+	}
+}

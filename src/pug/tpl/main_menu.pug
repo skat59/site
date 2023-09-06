@@ -1,0 +1,55 @@
+<div class="menu">
+	<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="navbar navbar-skat">
+		<div class="container-fluid navbar-container">
+			<div class="navbar-header">
+				<button type="button" data-toggle="collapse" data-target="#main-menu-nav" class="navbar-toggle"><span class="sr-only">Меню сайта</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a href="/" class="navbar-brand sk-home"></a>
+			</div>
+			<div id="main-menu-nav" class="collapse navbar-collapse">
+[[DLMenu?
+	&parents=`1`
+	&maxDepth=`2`
+	
+	&outerTpl=`@CODE:<ul class="nav navbar-nav">[+wrap+]</ul>`
+	&parentRowTpl=`@CODE:
+<li class="dropdown navbar-skat-navbar-nav-item [+classNames+]">
+	<a href="/#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">
+		[+title+]<b class="caret"></b>
+	</a>
+	<ul class="dropdown-menu  dropdown-menu-[+level+]">
+		<li class="nav-header [+classNames+]">
+			<a href="[+url+]" itemprop="url"[+classes+]>
+				<span>[+title+]</span>
+			</a>
+		</li>
+		<li class="divider"></li>
+		[+wrap+]
+	</ul>
+</li>`
+	&rowTpl=`@CODE:
+<li class="navbar-skat-navbar-nav-item">
+	<a href="[+url+]" itemprop="url"[+classes+]>[+title+]</a>
+</li>`
+	&innerTpl=`@CODE:[+wrap+]`
+	&innerRowTpl=`@CODE:<li><a href="[+url+]" itemprop="url" class="[+classNames+]">[+title+]</a></li>`
+
+	&urlScheme=``
+	&rowClass=``
+	&firstClass=``
+	&lastClass=``
+	&levelClass=``
+	&webLinkClass=``
+	&parentClass=`parent`
+	&hereClass=`active`
+	&activeClass=``
+	&oddClass=``
+	&evenClass=``
+	&stateClass=``
+]]
+			</div>
+		</div>
+	</nav>
+</div>
+<div class="clearfix">
+
+</div>

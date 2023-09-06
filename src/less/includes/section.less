@@ -1,0 +1,103 @@
+.section {
+	&_h2 {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: 20px;
+		font-weight: bold;
+		@media(min-width: 768px){
+			font-size: 30px;
+		}
+	}
+	&_block {
+		padding: 0px;
+		position: relative;
+		.clearfix();
+		p {
+			margin-bottom: 0px;
+			+ p {
+				margin-top: 10px;
+			}
+		}
+		&:after, &:before {
+			position: absolute;
+			content: " ";
+			width: 30px;
+			height: 30px;
+			display: none;
+		}
+		&:after {
+			right: 0px;
+			bottom: 0px;
+			border-right: 2px solid #000;
+			border-bottom: 2px solid #000;
+		}
+		&:before {
+			left: 0px;
+			top: 0px;
+			border-left: 2px solid #000;
+			border-top: 2px solid #000;
+		}
+		@media (min-width: 768px){
+			padding: 30px 15px;
+			font-size: 18px;
+			text-align: justify;
+			&:after, &:before {
+				display: block;
+			}
+		}
+	}
+	&_home {
+		&_01 {
+			
+		}
+		&_02 {
+			
+		}
+		&_03 {
+			color: #fff;
+			background-color: #2e2e2e;
+			.section_block {
+				&:before, &:after {
+					display: none;
+				}
+				a {
+					&, &:focus, &:hover {
+						color: #fff;
+						text-decoration: underline;
+					}
+				}
+			}
+			.partner-item + .partner-item:before {
+				padding-top: 15px;
+				border-top: 1px solid #fff;
+				display: block;
+			}
+			> .row {
+				/*background-image: data-uri('@{images}bin/blick_top.png'), data-uri('@{images}bin/blick_bottom.png');
+				background-position: top center, bottom center;
+				background-repeat: repeat-x, repeat-x;*/
+			}
+			.catalog {
+				&_home {
+					&_list {
+						padding-bottom: 30px;
+					}
+					&_item {
+						&_link {
+							&_background {
+								filter: invert(1);
+							}
+							&:hover {
+								> span {
+									&:first-child {
+										filter: invert(0);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

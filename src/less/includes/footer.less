@@ -1,0 +1,127 @@
+.footer {
+	position: relative;
+	display: block;
+	background-image: data-uri('@{images}bin/foot_bg.png');
+	background-repeat: repeat-x;
+	background-position: top center;
+	background-color: #000;
+	color: #fff;
+	&-wrapper {
+		&-left {
+			text-align: center;
+			margin-bottom: 15px;
+			> span {
+				display: inline-block;
+				text-align: center;
+			}
+			a {
+				display: block;
+				&, &:hover, &:focus {
+					color: #fff;
+					text-decoration: underline;
+				}
+				> img {
+					max-width: 60px;
+					display: inline-block;
+				}
+				> span {
+					display: block;
+					margin-top: 10px;
+					.clearfix();
+				}
+			}
+			@media(min-width: 992px){
+				text-align: left;
+				margin-bottom: 0px;
+			}
+		}
+		&-right {
+			text-align:center;
+			@media(min-width: 992px) {
+				text-align: right;
+			}
+			.btn {
+				/*background-color: #002952;
+				color: #fff;
+				border: 1px solid #ffd129;
+				border-radius: 0px;
+				box-shadow: none;*/
+				margin: 15px;
+				font-weight: bold;
+				width: 189px;
+				.transition(all .3s);
+				@media (min-width: 992px) {
+					margin-right: 0px;
+					margin-top: 0px;
+					margin-left: 0px;
+					margin-bottom: 0px;
+					+ .btn {
+						margin-top: 15px;
+					}
+				}
+				&:hover {
+					/*background-color: #003a74;
+					color: #ffd129;*/
+				}
+				&.active, &:active, &:focus, &:hover, & {
+					outline: none;
+				}
+			}
+		}
+		&-center {
+			
+		}
+		&-copyright {
+			text-align: center;
+			.user-select(none);
+			cursor: default;
+			.copyright {
+				&-menu {
+					padding-left: 0px;
+					display: inline-block;
+					list-style: none;
+					.user-select(none);
+					> li {
+						float: left;
+						position: relative;
+						font-size: 14px;
+						&:before {
+							position: absolute;
+							content: " ";
+						}
+						+ li {
+							margin-left: 20px;
+							&:before {
+								content: "|";
+								left: 0px;
+								top: 0px;
+								margin-left: -11.5px;
+							}
+						}
+						a {
+							&, &:hover {
+								text-decoration: underline;
+								color: #fff;
+							}
+						}
+					}
+				}
+				&-wrapper {
+					color: #575757;
+					font-size: 12px;
+					a {
+						&, &:focus {
+							color: #575757;
+						}
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.pixel_callback_container_form_phone {
+	color: black !important;
+}

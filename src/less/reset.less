@@ -1,0 +1,94 @@
+body {
+	@media(min-width: 768px) {
+		font-size: 18px;
+	}
+}
+img {
+	max-width: 100%;
+}
+.red {
+	color: red;
+}
+.make-pm(margin-top, mt, 5, -100);
+.make-pm(margin-bottom, mb, 5, -100);
+.make-pm(padding-top, pt);
+.make-pm(padding-bottom, pb);
+.make-fs();
+.fwb {
+	font-weight: bold;
+}
+.fwn {
+	font-weight: normal;
+}
+a {
+	&, &:focus {
+		color: #036;
+		outline: none;
+	}
+	&:hover {
+		color: #4a76a2;
+	}
+}
+.jarallax {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+	/*image-rendering: pixelated;*/
+}
+.fancybox {
+	&-image {
+		object-fit: contain;
+	}
+	&-thumbs {
+		> ul {
+			> li {
+				> img {
+					object-fit: contain;
+				}
+			}
+		}
+	}
+}
+.youtube {
+	position: relative;
+	.clearfix();
+	height: 0px;
+	padding-bottom: 56.25%;
+	iframe {
+		position: absolute;
+		border: 0px;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		width: 100%;
+		height: 100%;
+	}
+}
+.embed-responsive {
+	> span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		border: 0;
+		.embed-responsive-item,
+		iframe,
+		embed,
+		object,
+		video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			border: 0;
+		}
+	}
+}
+.nowrap {
+	white-space: nowrap;
+}

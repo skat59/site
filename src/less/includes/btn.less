@@ -1,0 +1,53 @@
+.btn {
+	&-zayavka {
+		font-weight: bold;
+		.transition(all .3s);
+		//width: 189px;
+		//margin: 15px;
+		&, &:focus {
+			background-color: #002952;
+			color: #ffd129;
+			border: 1px solid #ffd129;
+			border-radius: 0px;
+			box-shadow: none;
+		}
+		&:hover {
+			background-color: #003a74;
+			color: #fff;
+		}
+		&.active, &:active, &:focus, &:hover, & {
+			outline: none;
+		}
+		@media (min-width: 992px) {
+			/*margin-right: 0px;
+			margin-top: 0px;
+			margin-left: 0px;
+			margin-bottom: 0px;*/
+		}
+	}
+	&-blue {
+		font-weight: bold;
+		display: inline-block;
+		.transition(all .3s);
+		&, &:focus {
+			background-color: #002952;
+			color: #ffd129;
+			border: 1px solid #ffd129;
+			border-radius: 0px;
+			box-shadow: none;
+		}
+		&:hover {
+			background-color: #003a74;
+			color: #fff;
+		}
+		&.active, &:active, &:focus, &:hover, & {
+			outline: none;
+		}
+		@media (min-width: 992px) {
+			/*margin-right: 0px;
+			margin-top: 0px;
+			margin-left: 0px;
+			margin-bottom: 0px;*/
+		}
+	}
+}

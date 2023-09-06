@@ -1,0 +1,61 @@
+{
+	"formMethod"				: "post",
+	"protectSubmit"				: "0",
+	"api"						: "0",
+	"to"						: "magazine@skat59.ru, office@skat59.ru",
+	"bcc"						: "projectsoft2009@yandex.ru, chgi@skat59.ru, ofis@skat59.ru",
+	"successTpl"				: "@CODE:<div id=\"message_form_success\"><h2 class=\"text-center\">Спасибо!</h2><p class=\"text-center\">Ваше письмо отправлено</p><p class=\"text-center\">Наши менеджеры свяжутся с Вами в свмое ближайшее время.</p></div>",
+	"messagesTpl"				: "@CODE:[+required+][+errors+]",
+	"messagesErrorOuterTpl"		: "@CODE:<ul class=\"error_list\"><li>[+messages+]</li></ul>",
+	"messagesErrorSplitter"		: "</li><li>",
+	"errorTpl"					: "@CODE:<li>[+message+]</li>",
+	"prepareProcess"			: "\\PSPlugin::setResultZayavkaForm",
+	"prepare"					: "\\PSPlugin::prepareZayavka",
+	"formTpl"					: "@CODE:<div id=\"zapchast_skat\" class=\"modal-form\"><div class=\"row\"><h2 class=\"container-fluid text-center\">Заявка на запчасти</h2><div class=\"container-fluid\"><div class=\"row form_wrapper clearfix\">[+form.messages+]<form method=\"post\"><input type=\"hidden\" name=\"formid\" value=\"zapchast\"><input type=\"hidden\" value=\"[+url.value+]\" name=\"url\"><div class=\"form-group clearfix hidden\"><label for=\"last_name\" class=\"container-fluid control-label\"><span class=\"red\">*</span> Фамилия:</label><div class=\"container-fluid\"><input id=\"last_name\" type=\"text\" class=\"form-control\" placeholder=\"Фамилия\" name=\"last_name\" value=\"[+last_name.value+]\"></div></div><div class=\"form-group clearfix\"><label for=\"first_name\" class=\"container-fluid control-label\"><span class=\"red\">*</span> Имя:</label><div class=\"container-fluid\"><input id=\"first_name\" type=\"text\" class=\"form-control\" placeholder=\"Имя\" name=\"first_name\" value=\"[+first_name.value+]\"></div></div><div class=\"form-group clearfix\"><label for=\"email\" class=\"container-fluid control-label\"><span class=\"red\">*</span> Email:</label><div class=\"container-fluid\"><input id=\"email\" type=\"text\" class=\"form-control\" placeholder=\"Email\" name=\"email\" value=\"[+email.value+]\"></div></div><div class=\"form-group clearfix\"><label for=\"phone\" class=\"container-fluid control-label\"><span class=\"red\">*</span> Телефон:</label><div class=\"container-fluid\"><input id=\"phone\" type=\"text\" class=\"form-control\" placeholder=\"+7(999)999-99-99\" name=\"phone\" value=\"[+phone.value+]\"></div></div><div class=\"form-group clearfix\"><label for=\"comment\" class=\"container-fluid control-label\"><span class=\"red\">*</span> Cообщение:</label><div class=\"container-fluid\"><textarea id=\"comment\" type=\"text\" class=\"form-control\" placeholder=\"Ваше сообщение\" name=\"comment\">[+comment.value+]</textarea></div></div><div class=\"form-group clearfix policy\"><div class=\"container-fluid\"><label for=\"policy\"><input id=\"policy\" type=\"checkbox\" class=\"form-control\" name=\"policy\" [+policy_check.value+] required=\"required\"> согласен с условиями</label> <a href=\"/policy.html\" target=\"_blank\">политики конфиденциальности</a></div></div><div class=\"form-group clearfix\"><div class=\"container-fluid text-center\"><button type=\"submit\" class=\"btn btn-primary\"><i class=\"glyphicon glyphicon-envelope\"></i> Отправить</button></div></div></form></div></div></div></div>",
+	"reportTpl"					: "@CODE:<div id=\"zapchast_skat\"><table width=\"100%\" style=\"width: 100%;max-width: 100%;min-width: 100%;margin-bottom: 20px;border: 1px solid #ddd;\"><tr><td colspan=\"2\" style=\"background:#002952;color:#ffffff;font-size:16px;padding:15px;\"><img style=\"width:100px;margin-right:15px;vertical-align:middle;display:inline-block;margin-right:15px;\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAACbCAMAAABCvxm+AAAAq1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////9NWaBYY6ZjbqxueLJ6g7iFjb6Ql8SbosqmrNCxttW8wdvHy+HT1ufbfUPdhU/e4O3gjVvilWbknnLmpn7prorp6vPrtpXtvqHvxq3yzrn01sT09fn239D459z77+j99/P///+/HF83AAAAGHRSTlMACBAYICgwOEBIUFhgaHB4gI+fr7/P3+87p7/qAAAJbklEQVR42u1ceVuqTBQPRCIktLJyKbdQSyMzsfj+n+yVffY5A1g8z33PX92uxM+zbzMXF//T35BmmNaV4zi9jE4/X1mmof0tLL1tOd0ej7qO1db/hl2m7fbk5NrmLzNQv7zuwen68tfYpykBy+D9BveMTq8cdYwzIzPdXnlyzTMK0+r2qlHX0n4XWdexT+7MyPRdN04Oz+b5lrOgY0rz5MK4PlY32M6vdskaDNO8tlrS51oW68E6rUK7oq0O7FI1k7bsq9oE2yZF41LOVLesPKA6lqWTrppUiG67HqbZQkelW727fkjRfb9nGyK3aNfAuhbxlW2EJ7pz+xAK6OHOKfDpxHd0W1WhXXKRGe59CKD7G5OH7rJOeXb0gmMgYCn73Ix7eqc2uWqYA8jfcGHcPoZqdGvl3Ma8SWlwLcw+s79+Yd2FJajvZI9j9lpS6QwU2nX2R6x+WJIe7PQro9LolvLDJotpxm1YgfoWg3VmNWj5l+uFFelWp0ViVoHmpBprPYSV6TFRO80pDw6FlqqJfhPWQncJ6+yy4Az6QfM+rIkeberrG6WcRzeF5jyG9dFNAq5bwpVo9EO3Ya3U10kWaMrRIIWm1yRPr/B1JgEOGCFsEppRC7T1ZDgowD2S4Gy1zCOFZtagav58NDiRR1oEAg6QlbRIC60O7bB4HiTkob92CGuV2oPm1g3NO8lywMJGgnM1sLLZdUDzp6MBQji20GK9kV+2FIGquoUeFuMBTgS2xCCK8NWGebbE4VSB9jIZUOSRIcJgvJRDV0QUKe1y19MhjWww8qlqQsci5BUkjFpVUiJ/PmYAG05eWJEfz+f4gTUPCNdJTlQKWe4wMHpeHNgfdxkv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\" />ООО «СКАТ» - надежный поставщик спецтехники на Западном Урале</td></tr><tr><th style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;width:100px;\"><p style=\"margin:0px !important;text-align:right;\">Тема:</p></th><td style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;\"><p style=\"margin:0px !important;\">Заявка на запчасти</p></td></tr><tr><th style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;width:100px;\"><p style=\"margin:0px !important;text-align:right;\">Имя:</p></th><td style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;\"><p style=\"margin:0px !important;\">[+first_name.value+]</p></td></tr><tr><th style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;width:100px;\"><p style=\"margin:0px !important;text-align:right;\">Email:</p></th><td style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;\"><p style=\"margin:0px !important;\"><a href=\"mailto:[+first_name.value+]<[+email.value+]>?subject=Re:[+subjectval.value+]\" target=\"_blank\">[+email.value+]</a></p></td></tr><tr><th style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;width:100px;\"><p style=\"margin:0px !important;text-align:right;\">Телефон:</p></th><td style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;\"><p style=\"margin:0px !important;\">[+phone.value+]</p></td></tr><tr><th style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;width:100px;\"><p style=\"margin:0px !important;text-align:right;\">Сообщение:</p></th><td style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;\"><p style=\"margin:0px !important;\">[+messagecomment+]</p></td></tr><tr><td colspan=\"2\" style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;\"><p style=\"margin:0px !important;\">Сообщение отправлено со страницы сайта: <a href=\"[+url.value+]\" target=\"_blank\">[+pagetitle.value+]</a></p></td></tr><tr><td colspan=\"2\" style=\"padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;\"><p style=\"margin:0px !important;\">Для ответа на сообщение используйте данную ссылку: <a href=\"mailto:[+first_name.value+]<[+email.value+]>?subject=Re:[+subjectval.value+]\" target=\"_blank\">[+first_name.value+]<[+email.value+]></a></p></td></tr></table><p><b>*&nbsp;</b><i>Не отвечайте на данное письмо! Оно отправлено автоматически.</i><p><p style=\"color: red;\"><b>Для ответа используйте ссылку в теле письма!</b></p></div>",
+	"messagesTpl"				: "@CODE:[+required+][+errors+]",
+	"rules"						: {
+								"last_name": {
+									"custom" : {
+										"function": "\\ProjectSoft\\FormValidator::isNull",
+										"params": [0],
+										"message": "Вы не можете отправить данные"
+									}
+								},
+								"first_name": {
+									"custom" : {
+										"function": "\\ProjectSoft\\FormValidator::strLength",
+										"params": [2],
+										"message": "Слишком короткое имя"
+									}
+								},
+								"email":{
+									"custom": {
+										"function": "\\ProjectSoft\\FormValidator::emailValid",
+										"params": [0],
+										"message": "Email введён не корректно"
+									}
+								},
+								"phone": {
+									"custom" : {
+										"function": "\\ProjectSoft\\FormValidator::phoneValid",
+										"params": [0],
+										"message": "Телефон введён не корректно"
+									}
+								},
+								"comment": {
+									"custom" : {
+										"function": "\\ProjectSoft\\FormValidator::noTags",
+										"params": [2],
+										"message": "Вы не ввели сообщение"
+									}
+								},
+								"policy": {
+									"custom": {
+										"function": "\\ProjectSoft\\FormValidator::isPolicyCheck",
+										"params": [],
+										"message": "Нужно принять политику конфиденциальности"
+									}
+								}
+							}
+}

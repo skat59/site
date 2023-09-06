@@ -1,0 +1,446 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"file",
+				"fileOrigin"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"rgb",
+				"rgb2hex"
+			],
+			[
+				"to",
+				"toUpperCase"
+			],
+			[
+				"ff",
+				"ffmpeg_down"
+			],
+			[
+				"pre",
+				"presets"
+			],
+			[
+				"en",
+				"engine"
+			],
+			[
+				"o",
+				"ogImage"
+			],
+			[
+				"chat",
+				"chat_id"
+			],
+			[
+				"c",
+				"console"
+			],
+			[
+				"is",
+				"is_array"
+			],
+			[
+				"nav",
+				"nav-btn"
+			],
+			[
+				"obje",
+				"object-position"
+			],
+			[
+				"stru",
+				"structure"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"text",
+				"text-decoration-style"
+			],
+			[
+				"tex",
+				"text-decoration-color"
+			],
+			[
+				"s",
+				"sticky"
+			],
+			[
+				"h",
+				"html\thtml"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Build Project",
+					""
+				],
+				[
+					"Packages/Pug/Pug.sublime-build",
+					""
+				]
+			],
+			[
+				"Build Project",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"li",
+				"Package Control: List Packages"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Pan",
+				"Package Control: Install Package"
+			],
+			[
+				"PackageControl",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/OSPanel/domains/skat59.school",
+		"/C/OSPanel/domains/skat59.school/site",
+		"/C/OSPanel/domains/skat59.school/site/assets",
+		"/C/OSPanel/domains/skat59.school/site/assets/flash",
+		"/C/OSPanel/domains/skat59.school/site/assets/fonts",
+		"/C/OSPanel/domains/skat59.school/site/assets/fonts/ttf",
+		"/C/OSPanel/domains/skat59.school/site/assets/templates",
+		"/C/OSPanel/domains/skat59.school/site/assets/templates/response",
+		"/C/OSPanel/domains/skat59.school/site/assets/templates/response/js",
+		"/C/OSPanel/domains/skat59.school/site/assets/templates/skat_1.0.0",
+		"/C/OSPanel/domains/skat59.school/site/assets/templates/skat_1.0.0/css",
+		"/C/OSPanel/domains/skat59.school/site/assets/templates/skat_1.0.0/js",
+		"/C/OSPanel/domains/skat59.school/site/assets/templates/skat_1.0.0/tpl"
+	],
+	"file_history":
+	[
+		"/C/OSPanel/domains/skat59.school/site/assets/templates/skat_1.0.0/css/style.css",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/evoSearch.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/favicons.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/header.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/head.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/forms.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/footer.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/breadcrumbs.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/catalog.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/catalog_home.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/catalog_lefel.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/cpecpredlogenie.pug",
+		"/C/OSPanel/domains/skat59.school/src/pug/tpl/cpecpredlogenie_bu.pug",
+		"/C/OSPanel/domains/skat59.school/package.json",
+		"/C/OSPanel/domains/skat59.school/src/less/font_skat.less",
+		"/C/OSPanel/domains/skat59.school/src/jade/index.pug",
+		"/C/OSPanel/domains/skat59.school/skat59.sublime-project",
+		"/C/OSPanel/domains/skat59.school/.gitignore",
+		"/C/OSPanel/domains/skat59.school/gruntfile.js",
+		"/C/OSPanel/domains/skat59.school/src/js/main.js",
+		"/C/OSPanel/domains/skat59.school/src/fonts/variables.less",
+		"/C/OSPanel/domains/skat59.school/src/less/variables.less",
+		"/C/OSPanel/domains/skat59.school/src/less/main.less",
+		"/C/OSPanel/domains/skat59.school/src/less/theme.less",
+		"/C/OSPanel/domains/skat59.school/src/less/includes/callme.less",
+		"/C/OSPanel/domains/skat59.school/site/vendor/projectsoft/studionions/classes/tpl/main_menu.tpl",
+		"/C/OSPanel/domains/skat59.school/site/.htaccess",
+		"/C/OSPanel/domains/spds.school/src/js/jquery.btn.js",
+		"/C/OSPanel/domains/spds.school/src/pug/tpl/cookie.pug",
+		"/C/OSPanel/domains/spds.school/src/pug/tpl/home_news.pug",
+		"/C/OSPanel/domains/spds.school/src/pug/tpl/news_tpl.pug",
+		"/C/OSPanel/domains/spds.school/src/pug/growth_point.pug",
+		"/C/OSPanel/domains/spds.school/src/pug/vov.pug",
+		"/C/OSPanel/domains/spds.school/src/js/main.js",
+		"/C/OSPanel/domains/spds.school/src/less/inc/btn.less",
+		"/C/OSPanel/domains/spds.school/Gruntfile.js",
+		"/C/OSPanel/domains/spds.school/spds.sublime-project",
+		"/C/OSPanel/domains/spds.school/.gitignore",
+		"/C/OSPanel/domains/gbou.school/src/js/main.js",
+		"/C/OSPanel/domains/gbou.school/Gruntfile.js",
+		"/C/OSPanel/domains/gbou.school/gbou.sublime-project",
+		"/C/OSPanel/domains/gbou.school/.gitignore",
+		"/C/OSPanel/domains/gbou.school/site/viewer/web/viewer-edit.js",
+		"/C/OSPanel/domains/gbou.school/site/assets/comon/snippets/YandexMetrika/snippet.YandexMetrika.php",
+		"/C/OSPanel/domains/gbou.school/src/pug/tpl/yepnope-load.pug",
+		"/C/OSPanel/domains/gbou.school/site/manager/includes/config.inc.php",
+		"/C/OSPanel/domains/gbou.school/site/viewer/build/pdf.js",
+		"/C/Users/ProjectSoft/Desktop/color/color/main.less",
+		"/C/Users/ProjectSoft/Desktop/2023-01-24-sm.xlsx",
+		"/C/Users/ProjectSoft/Desktop/color/favicon.pug",
+		"/C/Users/ProjectSoft/Desktop/color/index.html",
+		"/C/Users/ProjectSoft/Desktop/color/index.pug",
+		"/C/Users/ProjectSoft/Desktop/color/main.less",
+		"/C/Users/ProjectSoft/Desktop/color/color.sublime-project",
+		"/C/Users/ProjectSoft/Desktop/color/color.sublime-workspace",
+		"/C/Users/ProjectSoft/Desktop/color/main.js",
+		"/C/Users/ProjectSoft/Desktop/color/package.json",
+		"/C/Users/ProjectSoft/AppData/Roaming/Sublime Text 3/Packages/User/Minify.sublime-settings",
+		"/C/Users/ProjectSoft/Desktop/color/main.css",
+		"/C/Users/ProjectSoft/AppData/Roaming/Sublime Text 3/Packages/Minify/Minify.sublime-settings",
+		"/C/Users/ProjectSoft/Desktop/radioapp/package.json",
+		"/C/Users/ProjectSoft/Desktop/radioapp/bower.json",
+		"/C/OSPanel/domains/random.nm/random.sublime-project",
+		"/C/OSPanel/domains/random.nm/index.php",
+		"/C/OSPanel/domains/random.nm/index.pug",
+		"/C/OSPanel/domains/random.nm/main.js",
+		"/C/OSPanel/domains/random.nm/main.less",
+		"/C/OSPanel/domains/random.nm/index.html",
+		"/C/OSPanel/domains/random.nm/0000.sublime-build",
+		"/C/Users/ProjectSoft/AppData/Roaming/Sublime Text 3/Packages/User/LocalizedMenu.sublime-settings",
+		"/C/Projects/YourRadioLite/Gruntfile.js",
+		"/C/Projects/YourRadioLite/WebKit-Radio.sublime-project",
+		"/C/Projects/YourRadioLite/src/js/require.js",
+		"/C/Projects/YourRadioLite/src/js/main.js",
+		"/C/Projects/YourRadioLite/src/less/inc/main.less",
+		"/C/Projects/YourRadioLite/node_modules/grunt-nwjs-ffmpeg-download/tasks/ffmpeg_down.js",
+		"/C/OSPanel/domains/rezerv.school/Gruntfile.js",
+		"/C/OSPanel/domains/rezerv.school/node_modules/grunt-favicons/tasks/favicons.js",
+		"/C/Users/ProjectSoft/Desktop/grunt-favicons/tasks/favicons.js",
+		"/C/OSPanel/domains/rezerv.school/rezerv.sublime-project",
+		"/C/OSPanel/domains/rezerv.school/.editorconfig",
+		"/C/OSPanel/domains/rezerv.school/.gitignore",
+		"/C/Users/ProjectSoft/Desktop/ПОТОЛОК/share.svg",
+		"/C/OSPanel/domains/rezerv.school/src/.1234567890",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/develop/plugins/telegram_bot/plugin.telegram_bot.php",
+		"/C/OSPanel/domains/rezerv.school/src/js/main.js",
+		"/C/OSPanel/domains/rezerv.school/test/viewer/viewer-mini.js",
+		"/C/OSPanel/domains/rezerv.school/site/viewer/web/index.php",
+		"/C/OSPanel/domains/rezerv.school/site/viewer/web/viewer-edit.js",
+		"/C/Users/PROJEC~1/AppData/Local/Temp/Rar$DRa272.4629/pack/install/setup.data.sql",
+		"/C/OSPanel/domains/rezerv.school/site/assets/plugins/extrascheck/CheckOutdated.class.php",
+		"/C/OSPanel/domains/rezerv.school/site/assets/pdfjs/build/pdf.js",
+		"/C/OSPanel/domains/rezerv.school/site/composer.json",
+		"/C/OSPanel/domains/rezerv.school/site/manager/media/script/main.js",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/develop/plugins/minifyhtml/minifyhtml.plugin.php",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/develop/modules/clientsettings/config/tab100.php",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/html/tpl/card_contact.html",
+		"/C/OSPanel/domains/rezerv.school/src/pug/tpl/card_contact.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/tpl/head.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/tpl/header.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/tpl/javascript.pug",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/html/tpl/javascript.html",
+		"/C/OSPanel/domains/rezerv.school/src/pug/leader.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/tpl/footer.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/unauthorized.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/structure.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/notfound.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/index.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/documents.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/develop.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/deputy.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/default.pug",
+		"/C/OSPanel/domains/rezerv.school/src/pug/tpl/style.pug",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/develop/snippets/ogimage/snippet.ogimage.php",
+		"/C/OSPanel/domains/rezerv.school/site/.htaccess",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/develop/plugins/createdocfolder/plugin.createdocfolder.php",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/develop/plugins/tabenabled/plugin.tabenabled.php",
+		"/C/OSPanel/domains/rezerv.school/src/less/rule/bvi.less",
+		"/C/OSPanel/domains/rezerv.school/src/less/rule/map.less",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/js/main.min.js",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/html/notfound.html",
+		"/C/OSPanel/domains/rezerv.school/site/assets/plugins/pagebuilder/config/documents.php",
+		"/C/OSPanel/domains/rezerv.school/src/less/import.plugins.less",
+		"/C/OSPanel/domains/rezerv.school/site/assets/templates/projectsoft/css/main.css",
+		"/C/OSPanel/domains/rezerv.school/site/assets/plugins/pagebuilder/config/groups.php.sample",
+		"/C/OSPanel/domains/rezerv.school/site/assets/plugins/pagebuilder/pagebuilder.php",
+		"/C/OSPanel/domains/rezerv.school/src/less/rule/footer.less",
+		"/C/OSPanel/domains/rezerv.school/src/less/rule/card.less"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			", 'notify:done'",
+			",'notify:done'",
+			"'notify:watch', "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 361.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "skat59.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 397.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

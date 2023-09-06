@@ -1,0 +1,197 @@
+.header {
+	color: #fff;
+	font-size: 16px;
+	#header-home-link {
+		width: 155px;
+		height: 155px;
+		display: block;
+		position: relative;
+		margin-top: -30px;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		@media(min-width: 480px){
+			float: right;
+		}
+		img, svg {
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&-title {
+		background-color: #001F3D;
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		font-size: 18px;
+		padding: 15px;
+		p {
+			margin-bottom: 0px;
+			.user-select(none);
+			cursor:default;
+		}
+	}
+	&-line {
+		&-container {
+			&-row {
+				background-image: -webkit-linear-gradient(left, #003a74 0%, #003a74 49.9%, #001f3d 50.1%, #001f3d 100%);
+				background-image: -o-linear-gradient(left, #003a74 0%, #003a74 49.9%, #001f3d 50.1%, #001f3d 100%);
+				background-image: linear-gradient(to right, #003a74 0%, #003a74 49.9%, #001f3d 50.1%, #001f3d 100%);
+				background-repeat: repeat-x;
+				&-container {
+					padding-left: 15px;
+					padding-right: 15px;
+					width: 100%;
+					.center-block();
+					@media(min-width: 1200px){
+						width: 1170px;
+					}
+				}
+			}
+		}
+		.color_0 {
+			&1 {
+				background-color: #003A74;
+			}
+			&2 {
+				background-color: #003366;
+			}
+			&3 {
+				background-color: #002952;
+			}
+			&4 {
+				background-color: #001F3D;
+			}
+		}
+		&-flex {
+			display: block;
+			.column-flex {
+				display: block;
+				padding-left: 15px;
+				padding-right: 15px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				width: 100%;
+				&-block {
+					text-align: center;
+					.icon {
+						display: block;
+						margin-bottom: 10px;
+						font-size: 30px;
+						text-align: center;
+						color: #FFF;
+					}
+					&-wrapper {
+						display: inline-block;
+						vertical-align: middle;
+						text-align: left;
+						&-title {
+							color: #AEAEAE;
+						}
+						.hred {
+							color: #ff9955;
+						}
+						p {
+							margin-bottom: 0px;
+							+ p {
+								margin-top: 10px;
+							}
+						}
+						.contact {
+							&-block {
+								&-phone,
+								&-email {
+									position: relative;
+									padding-left: 50px;
+									.column-flex-block-wrapper-title {
+										display: block;
+									}
+									&:before {
+										font-family: 'Skat59' !important;
+										speak: none;
+										font-style: normal;
+										font-weight: normal;
+										font-variant: normal;
+										text-transform: none;
+										line-height: 1;
+										-webkit-font-smoothing: antialiased;
+										-moz-osx-font-smoothing: grayscale;
+										color: #fff;
+										position: absolute;
+										left: 0;
+										font-size: 30px;
+									}
+								}
+								&-phone {
+									&:before {
+										content: @sk-mobphone;
+									}
+								}
+								&-email {
+									&:before {
+										content: @sk-email;
+									}
+								}
+							}
+						}
+					}
+				}
+				@media(min-width: 480px){
+					flex: 0 1 auto;
+					align-self: auto;
+					width: percentage(1/2);
+				}
+				@media(min-width: 992px){
+					width: percentage(1/4);
+				}
+			}
+			@media(min-width: 480px){
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-content: stretch;
+				font-size: 14px;
+			}
+		}
+	}
+	@media(min-width: 480px){
+		font-size: 14px;
+	}
+}
+.no-flexbox {
+	.header {
+		&-line {
+			&-flex {
+				.column-flex {
+					@media(min-width: 480px){
+						float: left;
+						min-height: 175px;
+					}
+				}
+				@media(min-width: 480px){
+					display: block;
+				}
+			}
+		}
+	}
+}
+.img-logotip {
+	display: block;
+}
+.svg-logotip {
+	display: none;
+}
+.svg.smil {
+	.img {
+		&-logotip {
+			display: none;
+		}
+	}
+	.svg {
+		&-logotip {
+			display: block;
+		}
+	}
+}

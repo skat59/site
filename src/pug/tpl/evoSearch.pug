@@ -1,0 +1,10 @@
+div.row.news-item(style="margin-top: 0px !important;")
+	div.col-lg-9.col-md-8.col-sm-9.col-xs-8.pull-right.news-item-title
+		h4.search-item-title
+			a(href!="[+url+]")
+				|[+pagetitle+]
+	div.col-lg-3.col-md-4.col-sm-3.col-xs-4.news-item-image
+		a(href!="[+url+]" style!="background-image: url('/[[#thumb? &input=`[+tv.ogimage+]` &options=`w=648,h=307,far=C,f=jpg,bg=FFFFFF`]]');")
+	div.col-lg-9.col-md-8.col-sm-9.col-xs-8.pull-right.news-item-description
+		div.search-item-extract
+			|[+extract+]

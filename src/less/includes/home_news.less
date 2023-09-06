@@ -1,0 +1,113 @@
+.home {
+	&-news {
+		color: #fff;
+		&-wrapper {
+			margin-bottom: 60px;
+		}
+		&-item {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background-color: rgba(255, 255, 255, .8);
+			color: #333;
+			position: relative;
+			.transition(background .3s);
+			> a {
+				position: absolute;
+				white-space: nowrap;
+				text-indent: 400%;
+				overflow: hidden;
+				display: block;
+				top: 0px;
+				left: 0px;
+				bottom: 0px;
+				right: 0px;
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+			}
+			&-title {
+				h2, h3, h4, h5, h6 {
+					color: #337ab7;
+					text-align: left;
+					font-weight: bold;
+					font-size: 18px;
+					margin-top: 0px;
+					margin-bottom: 10px;
+					text-decoration: none;
+					a {
+						&, &:focus {
+							text-decoration: none;
+						}
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+			&-image {
+				position: relative;
+				a, span {
+					display: block;
+					height: 0px;
+					padding-bottom: percentage((1/16)*9);
+					background-position: center center;
+					background-size: auto 100%;
+					background-repeat: no-repeat;
+					filter: saturate(100%);
+					.transition(all .5s);
+					&:hover {
+						background-size: auto 107%;
+						filter: saturate(150%);
+					}
+				}
+			}
+			&-description {
+				&-date {
+					margin-bottom: 10px;
+					&, time {
+						font-size: 12px;
+						display: block;
+					}
+				}
+			}
+			
+			&:hover {
+				background-color: #fff;
+				.home {
+					&-news {
+						&-item {
+							&-title {
+								h2, h3, h4, h5, h6 {
+									//color: #4a76a2;
+									//text-decoration: underline;
+								}
+							}
+							&-image {
+								a, span {
+									background-size: auto 107%;
+									filter: saturate(150%);
+								}
+							}
+						}
+					}
+				}
+			}
+			@media (max-width: 599px) {
+				&-title {
+					h2, h3, h4, h5, h6 {
+						text-align: center;
+					}
+				}
+				&-image {
+					margin-bottom: 15px;
+				}
+				.col-xs-8, .col-xs-4 {
+					width: 100%;
+				}
+			}
+			+ article, + div {
+				margin-top: 30px;
+			}
+		}
+	}
+}

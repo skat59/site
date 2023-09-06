@@ -1,0 +1,78 @@
+.attacment_files {
+	.attachment_file {
+		margin-bottom: 30px;
+		position: relative;
+		display: block;
+		padding-left: 15px;
+		padding-right: 15px;
+		clear: none;
+		.user-select(none);
+		@media (min-width: 768px) {
+			&:nth-child(3n + 1){
+				clear: none;
+			}
+			&:nth-child(2n + 1){
+				clear: left;
+			}
+		}
+		@media (min-width: 992px) {
+			&:nth-child(2n + 1){
+				clear: none;
+			}
+			&:nth-child(3n + 1){
+				clear: left;
+			}
+		}
+		&-link {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			text-decoration: none;
+			&-text {
+				display: block;
+				position: relative;
+				//left: 6%;
+				//width: 94%;
+				&.size {
+					padding-bottom: 17px;
+				}
+			}
+			&-title, &-size {
+				display: block;
+				text-align: center;
+			}
+			&-size {
+				text-decoration: none !important;
+				font-size: 80%;
+				position: absolute;
+				bottom: 0px;
+				width: 100%;
+			}
+			&-title {
+				font-weight: bold;
+				text-decoration: underline;
+			}
+			.background-type {
+				display: block;
+				background-repeat: no-repeat;
+				background-size: auto 96%;
+				background-position: center bottom;
+				padding-bottom: 30%;
+				position: relative;
+				.transition(all .3s);
+			}
+			&:hover {
+				.background-type {
+					background-size: auto 100%;
+				}
+			}
+			&.mime_type {
+				&-pdf {
+					.background-type {
+						background-image: data-uri('@{images}/bin/pdf.png');
+					}
+				}
+			}
+		}
+	}
+}

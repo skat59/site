@@ -1,0 +1,39 @@
+{
+	"name": "skat",
+	"version": "1.0.0",
+	"description": "",
+	"main": "package.json",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+	"inst": "npm install --legacy-peer-deps && bower install",
+	"build": "grunt -v"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/skat59/site.git"
+	},
+	"author": "ProjectSoft <projectsoft2009@yandex.ru>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/skat59/site/issues"
+	},
+	"homepage": "https://github.com/skat59/site#readme",
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"grunt-autoprefixer": "^3.0.4",
+		"grunt-banner": "^0.6.0",
+		"grunt-contrib-clean": "^1.0.0",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-contrib-cssmin": "^2.2.1",
+		"grunt-contrib-imagemin": "^1.0.1",
+		"grunt-contrib-less": "^1.3.0",
+		"grunt-contrib-pug": "^3.0.0",
+		"grunt-contrib-requirejs": "^1.0.0",
+		"grunt-contrib-uglify": "^2.0.0",
+		"grunt-contrib-watch": "^1.0.0",
+		"grunt-modernizr": "latest",
+		"grunt-newer": "^1.2.0",
+		"load-grunt-tasks": "^3.5.0",
+		"time-grunt": "git+https://github.com/ProjectSoft-STUDIONIONS/time-grunt.git"
+	}
+}

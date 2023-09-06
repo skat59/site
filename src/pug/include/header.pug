@@ -1,0 +1,64 @@
+header.header.container-fluid
+	.row.header-line
+		.header-title
+			p
+				|ООО «СКАТ» - надежный поставщик спецтехники на Западном Урале
+		.header-line-container.container-fluid
+			.header-line-container-row.row
+				.header-line-container-row-container
+					.header-line-flex.row
+						.column-flex.color_01.clearfix
+							a#header-home-link(href="/")
+								img.img-logotip(src="/assets/templates/skat_1.0.0/images/logotip.png" alt="ООО «СКАТ» - надежный поставщик спецтехники на Западном Урале")
+								span.svg-logotip
+									<?=getFileContent('/assets/templates/skat_1.0.0/images/oval_02.svg');?>
+						.column-flex.color_02.clearfix
+							.column-flex-block
+								i.icon.sk-map
+								.column-flex-block-wrapper
+									span.column-flex-block-wrapper-title Адрес:
+									p.address
+										span.index
+											|614990
+										|, 
+										span.city
+											|г. Пермь
+										|, 
+										br
+										span.street
+											|ул. Окулова 75, 
+										span.korpus
+											|корпус 8
+						.column-flex.color_03.clearfix
+							.column-flex-block
+								i.icon.sk-work
+								.column-flex-block-wrapper
+									span.column-flex-block-wrapper-title Режим работы:
+									p.work
+										span.work-days
+											|ПН — ПТ с 8.00 до 17.00
+										br
+										span.work-cb
+											span.hred СБ — ВС 
+											|выходные
+						.column-flex.color_04.clearfix
+							.column-flex-block
+								.column-flex-block-wrapper
+									p.contact-block-phone
+										span.column-flex-block-wrapper-title
+											|Телефон:
+										span.column-flex-block-wrapper-phone
+											a(href="tel:+73422700010").hred
+												|+7 (342) 270-00-10
+										span.column-flex-block-wrapper-title
+											|Телефон / Факс:
+										span.column-flex-block-wrapper-phone
+											a(href="tel:+73422332062").hred
+												|+7 (342) 233-20-62
+									p.contact-block-email
+										span.column-flex-block-wrapper-title
+											|E-mail:
+										span.column-flex-block-wrapper-email
+											a(href="mailto:ofis@skat59.ru").hred
+												|ofis@skat59.ru
+					include local_busines

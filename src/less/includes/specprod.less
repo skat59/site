@@ -1,0 +1,45 @@
+.specprod {
+	&_list {
+		&_item {
+			margin-bottom: 15px;
+			&_title {
+				font-weight: bold;
+				a {
+					&, &:focus {
+						text-decoration: none;
+					}
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				@media(min-width: 768px){
+					font-size: 22px;
+				}
+			}
+			&_image {
+				
+			}
+			&_description {
+				&_wrapper {
+					
+				}
+			}
+			&_cena {
+				&_speccena {
+					
+				}
+			}
+			&:last-child {
+				margin-bottom: 0px;
+			}
+			@media (max-width: 599px){
+				.col-xs-4, .col-xs-8 {
+					width: 100%;
+				}
+				h2, h3, h4, h5, h6 {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

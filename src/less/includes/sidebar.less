@@ -1,0 +1,142 @@
+.open_sidebar {
+	&, body {
+		overflow: hidden;
+	}
+}
+.sidebar {
+	position: fixed;
+	overflow: hidden;
+	top: 0px;
+	right: 100%;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, .9);
+	z-index: 20;
+	opacity: 0;
+	&-wrapper {
+		width: 280px;
+		background-color: #fff;
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: -280px;
+		height: 100%;
+		&-nav {
+			position: relative;
+			height: 100%;
+			box-shadow: 2px 0px 0px 4px rgba(255, 255, 255, 0.30);
+			&-title {
+				padding: 15px;
+				margin-bottom: 0px;
+			}
+			nav {
+				position: relative;
+				height: ~'calc(100% - 55px)';
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+		}
+		ul {
+			margin-top: 0px;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 30px;
+			padding: 0px;
+			> li {
+				display: block;
+				list-style: none;
+				.clearfix();
+				> a {
+					display: block;
+					padding: 10px 10px;
+					outline: none !important;
+					transition: all .3s;
+					font-size: 14px;
+					&, &:focus {
+						background-color: #fff;
+						color: #002952;
+					}
+					&:hover {
+						background-color: #036;
+						color: #fff;
+						text-decoration: none;
+					}
+					&.active {
+						&, &:hover {
+							background-color: #001f3d;
+							color: #ffd129;
+						}
+					}
+				}
+				+ li {
+					> a {
+						border-top: 1px solid #003a74;
+					}
+				}
+			}
+		}
+		.btn {
+			&-close {
+				position: absolute;
+				display: block;
+				top: 0px;
+				right: -30px;
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+				background-color: #FFF;
+				span {
+					display: block;
+					content: " ";
+					width: 24px;
+					height: 2px;
+					left: 50%;
+					margin-left: -12px;
+					background-color: #000;
+					position: absolute;
+					margin-top: -1px;
+					transform-origin: 50% 50%;
+					transition: all .25s ease-in-out;
+					&:nth-child(1){
+						top: 5px;
+						transform: rotate(0deg);
+					}
+					&:nth-child(2) {
+						top: 15px;
+						transform: scaleX(1);
+					}
+					&:nth-child(3) {
+						top: 25px;
+						transform: rotate(-0deg);
+					}
+				}
+			}
+		}
+	}
+}
+.sidebar_open {
+	.sidebar {
+		&-wrapper {
+			.btn {
+				&-close {
+					span {
+						transform-origin: 50% 50%;
+						transition: all .25s ease-in-out;
+						&:nth-child(1){
+							top: 15px;
+							transform: rotate(45deg);
+						}
+						&:nth-child(2) {
+							top: 15px;
+							transform: scaleX(0);
+						}
+						&:nth-child(3) {
+							top: 15px;
+							transform: rotate(-45deg);
+						}
+					}
+				}
+			}
+		}
+	}
+}

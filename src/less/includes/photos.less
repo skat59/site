@@ -1,0 +1,62 @@
+.photos {
+	&-item {
+		text-align: center;
+		position: relative;
+		img {
+			max-width: 100%;
+			transform: scale(1);
+			transform-origin: 50% 50%;
+			transition: all .3s;
+		}
+		a {
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+		@media( max-width: 505px) {
+			&.col-xs-6 {
+				width: 100%;
+			}
+		}
+	}
+	&-slick {
+		position: relative;
+		opacity: 0;
+		transition: opacity 3s;
+		&.slick-initialized {
+			opacity: 1;
+		}
+		&.row {
+			position: relative;
+			width: 100%;
+			margin-left: 0px;
+			margin-right: 0px;
+			overflow: hidden;
+			.slick-list {
+				margin-left: -15px;
+				margin-right: -15px;
+			}
+		}
+		&-item {
+			&[class*="col-"]{
+				position: relative;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.slick {
+			&-track {
+				margin-left: auto;
+				margin-right: auto;
+				.photos-slick-item {
+					&[class*="col-"]{
+						margin-left: inherit;
+						margin-right: inherit;
+					}
+				}
+			}
+		}
+	}
+}

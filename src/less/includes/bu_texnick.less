@@ -1,0 +1,30 @@
+.outerharacter {
+	&-by {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 600px;
+		display: block;
+		&-list {
+			display: flex;
+			flex: 1 0 100%;
+			flex-direction: row;
+			> dt {
+				min-width: 154px;
+				max-width: 154px;
+				width: 154px;
+				&:after {
+					content: ":\00A0";
+				}
+			}
+			> dd {
+				
+			}
+			&:last-child {
+				// margin-bottom: 0px;
+			}
+			@media(max-width: 450px) {
+				flex-direction: column;
+			}
+		}
+	}
+}
